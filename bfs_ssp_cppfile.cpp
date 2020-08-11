@@ -25,7 +25,7 @@ void Graph<T>::printGraph()
         cout<<endl;
     }
 }
-/* different way of iterating
+/* different way of iteration
 void Graph<T>::printGraph()
 {
     typename map<T, list<T>> ::iterator itr;
