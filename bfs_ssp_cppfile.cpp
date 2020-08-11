@@ -25,6 +25,20 @@ void Graph<T>::printGraph()
         cout<<endl;
     }
 }
+/* different way of iterating
+void Graph<T>::printGraph()
+{
+    typename map<T, list<T>> ::iterator itr;
+    for(itr =m.begin(); itr !=m.end(); itr++)
+    {
+        T node =itr->first;
+        cout<<node<<" ->";
+        for(T nbr:itr->second)
+            cout<<nbr<<",";
+        cout<<endl;
+    }
+}
+*/
 template<typename T>
 void Graph<T>::bfs_ssp(T start)
 {
